@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/darkblue"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/tag"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:background="#FFF"
+        android:paddingBottom="1dp">
+
+       <LinearLayout
+           android:id="@+id/mid"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:text="Enter Paypal Account Details"
+               android:textColor="#000"
+               android:textSize="15sp" />
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_gravity="center"
+                   android:id="@+id/paypal_account_detail"
+                   android:layout_width="250dp"
+                   android:layout_height="50dp"
+                   android:hint="Email"
+                   android:inputType="textEmailAddress" />
+
+           </android.support.design.widget.TextInputLayout>
+
+
+       </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/mid"
+            android:layout_height="50dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/submit_btn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="#11000000"
+                app:cardBackgroundColor="@color/darkblue"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/button_submit"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

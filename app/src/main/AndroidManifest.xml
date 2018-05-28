@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.playtowin.hungryusapps.spinnergame">
+
+    <!--By integrating your android app with google play services you can use Google Services such as maps,drive and Google+.-->
+    <!--<meta-data-->
+        <!--android:name="com.google.android.gms.version"-->
+        <!--android:value="@integer/google_play_services_version" />-->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name=".Utils.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".Utils.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.Authentication.RegisterActivity"
+            android:noHistory="true"/>
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.Authentication.LoginActivity"
+            android:noHistory="true"/>
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.SignOutActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.SpinnerActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.HistoryActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.WithdrawActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.WithdrawalMethodActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.FeedbackActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.ContactUsActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.MainActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.AboutActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.ForgotPasswordActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.PhoneAuthenticationActivity" />
+        <activity android:name="com.playtowin.hungryusapps.spinnergame.TermsConditionsActivity"></activity>
+    </application>
+
+</manifest>

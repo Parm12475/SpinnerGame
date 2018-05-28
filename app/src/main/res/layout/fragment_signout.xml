@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Gallery Toolbar -->
+        <include layout="@layout/snippet_signout_toolbar" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvConfirmSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/sure_sign_out"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnConfirmSignout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvConfirmSignOut"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_gradient_bg"
+        android:text="@string/sign_out"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</LinearLayout>

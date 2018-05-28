@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "797273243338",
+    "firebase_url": "https://spinnergame-aa863.firebaseio.com",
+    "project_id": "spinnergame-aa863",
+    "storage_bucket": "spinnergame-aa863.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797273243338:android:d314ba58bde3034f",
+        "android_client_info": {
+          "package_name": "com.example.harindermaan.spinnergame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797273243338-sih37lkbipejohcfic3u7r5ah7q6nqqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harindermaan.spinnergame",
+            "certificate_hash": "68d472a68e30d14eb6f3093d9feb5dd49be0d82d"
+          }
+        },
+        {
+          "client_id": "797273243338-aemnshi50v82gc9h5nbhdis8oo4vldvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx6UrZg99kBfU1SkD6xhBFRoSs8u77bTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797273243338-aemnshi50v82gc9h5nbhdis8oo4vldvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797273243338:android:bc40fb682c13cf4c",
+        "android_client_info": {
+          "package_name": "com.playtowin.hungryusapps.spinnergame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797273243338-8f9io39cj4s0g1d21vq40gppbsdf6ftk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.playtowin.hungryusapps.spinnergame",
+            "certificate_hash": "68d472a68e30d14eb6f3093d9feb5dd49be0d82d"
+          }
+        },
+        {
+          "client_id": "797273243338-aemnshi50v82gc9h5nbhdis8oo4vldvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx6UrZg99kBfU1SkD6xhBFRoSs8u77bTg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797273243338-aemnshi50v82gc9h5nbhdis8oo4vldvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
